@@ -4,6 +4,7 @@ y_stick = [1.086866757 1.028410612 0.965779028 0.913586041 0.861393054 0.8217263
 
 % PART A
 d = sqrt(x_stick.^2 + y_stick.^2);
+figure(1);
 plot(t, d, 'r.-');
 title('A2P5a');
 xlabel('t');
@@ -12,6 +13,16 @@ ylabel('|d|');
 % PART B
 % Forward distance scheme: f'(x_i) = (f(x_(i+1))-f(x_i))/(x_(i+1)-x_i)
 % diff(X) = [X(2)-X(1), X(3)-X(2), ...]
-
 v_x = diff(x_stick) ./ diff(t);
-v_y = diff(y_stick) ./ diff(t)
+v_y = diff(y_stick) ./ diff(t);
+v_mag = sqrt(v_x.^2 + v_y.^2);
+figure(2);
+plot(t(1:length(t)-1), v_mag, 'b.-');
+title('A2P5b');
+xlabel('t');
+ylabel('|v|');
+
+% PART C
+comment5c = 'ii, iv';
+
+
