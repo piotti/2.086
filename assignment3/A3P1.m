@@ -1,0 +1,1 @@
+comment1 = 'The trapezoidal scheme will exactly integrate a linear function.';
