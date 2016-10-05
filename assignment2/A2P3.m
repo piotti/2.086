@@ -8,5 +8,5 @@ f3 = sin(pi*x).^2;
 plot(x,f1,'r-',x,f2,'bo-',x,f3,'kx-');
 legend('f1', 'f2', 'f3');
 xlabel('x');
-ylabel('y');
+ylabel('f(x)');
 title('A2P3');

@@ -1,1 +1,1 @@
-comment1 = 'The trapezoidal scheme will exactly integrate a linear function.';
+comment1 = 'The trapezoidal scheme will exactly integrate a linear function. The trapezoidal scheme works by estimating the function between any two adjacent points as a straight line, and in the case of a linear function, this is accurate.';

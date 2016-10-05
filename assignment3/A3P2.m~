@@ -1,1 +1,0 @@
-comment2 = 'Rectangular-right & The first and second derivatives of e^x-1 are both always positive. This means that both the rectangular-right and trapezoidal integration schemes will always over-estimate the integral. Rectangular-left will always under-estimate';
