@@ -1,0 +1,1 @@
+[u, U, fhat] = GEBasic(A, f);

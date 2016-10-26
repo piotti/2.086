@@ -1,0 +1,1 @@
+[u,U,fhat] = GEPartialPivoting(A,f);
