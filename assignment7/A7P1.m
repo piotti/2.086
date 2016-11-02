@@ -1,0 +1,1 @@
+[dx,dy] = NewtonRaphson(F,x_0,100);
