@@ -36,7 +36,7 @@ end
 figure('Name','LinearFirstOrder', 'NumberTitle','off')
 plot(t_a, v_a, '-ro', t_b, v_b, '-g*',t_c, v_c, '--bx')
 title('Linear First-Order Approximations')
-legend('a) dt=tau/2', 'b) dt=tau', 'c) dt=2*tau')
+legend('a) dt=\tau/2', 'b) dt=\tau', 'c) dt=2*\tau')
 xlabel('t')
 ylabel('v(t)')
 
@@ -71,14 +71,13 @@ t_c2 = 0:dt:t_final;
 v_c2 = v_0 * ones(size(t_c2));
 for k=1:size(t_c2,2)-1
     v_c2(k+1) = v_c2(k) + dt*-b/m*c*sign(v_c2(k));
-    disp(v_c2(k+1))
 end
 
 
 figure('Name','NonlinearFirstOrder', 'NumberTitle','off')
 plot(t_a2, v_a2, '-ro', t_b2, v_b2, '-g*',t_c2, v_c2, '--bx')
 title('Nonlinear First-Order Approximations')
-legend('a) dt=tau', 'b) dt=tau/2', 'c) dt=tau/10')
+legend('a) dt=\tau', 'b) dt=\tau/2', 'c) dt=\tau/10')
 xlabel('t')
 ylabel('v(t)')
 
