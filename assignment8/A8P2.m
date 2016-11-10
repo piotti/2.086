@@ -1,0 +1,19 @@
+D_meas;
+V;
+
+X = [ones(15, 1), -log(V)];
+
+
+beta = (X'*X) \ (X' * log(D_meas));
+
+C_hat = exp(beta(1));
+
+gamma_hat = beta(2);
+
+commentA8P2b = sprintf(strcat(...
+    'The least squares model tries to minimize the sum of all the errors. These errors are simply the actual minus experimental values for\n',...
+    'each data point. There is no normalization done--e.g., if the expected value is 100 and the experimental is 150, there is an error of\n',...
+    '50. And the if expected value is 1 and the actual value is 1.5, the error is 0.5. Even though these two cases had the same *proportional*\n',...
+    'error, the error from the larger sample is way more important to the least squares fitting. Due to this, errors that are only proportional\n',...
+    'to the mean signal value and aren''t correlated with each signal''s individual strength would work best. However, this isn''t physically\n',...
+    'reasonable--the error would be proportional to the distance of that measurement.'));
